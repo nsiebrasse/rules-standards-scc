@@ -73,7 +73,7 @@ No case-level standard errors are posted for the final ranking. The article's un
 
 Additional columns in particular files:
 
-- `consistency_pro.csv` — `Stage`: `original_840` for the 840 pairs whose 6,720 outcomes were added to the dataset before the final estimation, `top-up_114` for the 114 pairs added later to the close strata, whose outcomes were not (§ 2.2.3 n 27; Appendix A1.2.2). The endogeneity check in A1.2.2 depends on this distinction.
+- `consistency_pro.csv` — `Stage`: `original_840` for the 840 pairs whose 6,720 outcomes were added to the dataset before the final estimation, `top-up_114` for the 114 pairs added later to the close strata, whose outcomes were not (§ 2.2.3 n 27; Appendix A1.2.2). The endogeneity check in A1.2.2 depends on this distinction. In this file and in `consistency_pro_reasons_only.csv`, one of the eight repetitions of one pair (9785/10186 and 7070/7414 respectively) is recorded with the two decisions in reverse order; group repetitions by the unordered pair and reverse the sign of `Score` for that row.
 - `consistency_pro_reasons_only.csv` — `Series`: run label.
 - `consistency_gpt56_sol.csv` — `Reasoning_Effort` (`high`). `consistency_gpt52.csv` and `consistency_gpt56_sol.csv` lack the `RunTag`, `EdgeId` and year columns; pairs are identified by `ParqRowA` and `ParqRowB`. The GPT-5.2 run used the production prompt with the following block appended after the case information, to obtain reliably parseable output (Appendix n 7); the substantive guidelines were unchanged:
 
